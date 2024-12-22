@@ -1,0 +1,27 @@
+ed-hmi2002-101c-firmware (1.20241204.1) unstable; urgency=medium
+
+  * update Architecture
+ -- EDATEC <support@edatec.cn>  Wed, 4 Dec 2024 9:54:43 +0100
+
+ed-hmi2002-101c-firmware (1.20240806.2) unstable; urgency=medium
+
+  * Adapt kernel:6.6.31 and roorfs 2024-07-04
+ -- EDATEC <support@edatec.cn>  Tue, 6 Aug 2024 9:54:43 +0100
+
+ed-hmi2002-101c-firmware (1.20240407.1) unstable; urgency=medium
+
+  * add 101 rotate 90
+ -- EDATEC <support@edatec.cn>  Sun, 7 Apr 2024 9:54:43 +0100
+ed-hmi2002-101c-firmware (1.20240402.1) unstable; urgency=medium
+
+  * Update config.txt path
+ -- EDATEC <support@edatec.cn>  Tue, 2 Apr 2024 9:54:43 +0100
+ed-hmi2002-101c-firmware (1.20240126.1) unstable; urgency=medium
+
+  * Add BSP check
+ -- EDATEC <support@edatec.cn>  Fri, 26 Jan 2024 9:54:43 +0100
+
+ed-hmi2002-101c-firmware (1.20240110.1) unstable; urgency=medium
+
+  * Init
+ -- EDATEC <support@edatec.cn>  Wed, 10 Jan 2024 9:54:43 +0100

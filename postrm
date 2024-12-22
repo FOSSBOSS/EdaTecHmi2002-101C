@@ -1,0 +1,32 @@
+#!/bin/sh
+#uninstaller?
+CODENAME=$(cat /etc/os-release | grep VERSION_CODENAME=)
+CODENAME=${CODENAME#VERSION_CODENAME=}
+CONFIG_FILE="/boot/firmware/config.txt"
+
+if [ "${CODENAME}" = "bookworm" ];then
+    CONFIG_FILE="/boot/firmware/config.txt"
+    if [ ! -f "$CONFIG_FILE" ];then
+        exit 0
+    fi
+else
+    CONFIG_FILE="/boot/config.txt"
+    if [ ! -f "$CONFIG_FILE" ];then
+        exit 0
+    fi
+fi
+
+auto_remove(){
+    local value=$1
+    sed -i '/^'${value}'/d' $CONFIG_FILE
+}
+
+start(){
+    auto_remove "dtoverlay=vc4-kms-dsi-rzw-t101p136cq-rpi4-2lane,interrupt=2"
+    auto_remove "dtoverlay=imx219"
+    
+}
+
+start
+
+exit 0

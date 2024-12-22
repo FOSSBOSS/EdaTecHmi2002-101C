@@ -1,0 +1,9 @@
+Package: ed-hmi2002-101c-firmware
+Version: 1.20241204.1
+Architecture: all
+Maintainer: EDATEC <support@edatec.cn>
+Installed-Size: 14
+Section: unknown
+Priority: optional
+Homepage: http://www.eda-iot.com/
+Description: Firmware of EDATEC Software Package
