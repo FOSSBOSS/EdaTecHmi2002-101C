@@ -261,7 +261,9 @@ read
 }
 
 write_ini(){
-    #local t_user=$1  # this would have been hmi2002_101C
+    #local t_user=$1  # this would have been hmi2002_101C?
+#or maybe something else, this would have been called by the call the the debfile under sudo
+# so $t_user might be root?
    # local t_user=$USER
     #mkdir -p /home/${t_user}/.config
     mkdir -p $HOME/.config
