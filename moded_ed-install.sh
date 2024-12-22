@@ -2,7 +2,7 @@
 #set -xv
 :'
 Dependencies: 
-sudo apt install plymouth plymouth-themes lightdm xcb lxterminal labwc
+sudo apt install plymouth plymouth-themes lightdm xcb libxkbcommon lxterminal labwc
 
 Core changes:
 No dial out.
