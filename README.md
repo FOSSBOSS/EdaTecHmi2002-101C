@@ -9,10 +9,10 @@ sudo apt install plymouth plymouth-themes lightdm libxkbcommon lxterminal labwc
 Core changes:
 No dial out.
 No having to select a device.
-No trusting a forgein repo
-No need for root
-No forced reboot
-Changed code to not disable HDMI ports
+No trusting a forgein repo.
+No need for root.
+No forced reboot.
+Changed code to not disable HDMI ports.
 
 Todo:
 
@@ -22,4 +22,5 @@ there is a bug in the touch screen transformation settings
 
 
 Requests:
+
 remove the edatec splash. or make the splash selectable.
