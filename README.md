@@ -1,26 +1,41 @@
 # EdaTecHmi2002-101C
-After looking at the driver for the EdaTec HMI 2002-101C I decided to change some things. There are a bunch of things I dont like about the way this package operates.
+Decided to modify the EDATEC HMI 2002-101C driver installation script, for giggles.
 
 Dependencies: 
-sudo apt install plymouth plymouth-themes lightdm libxkbcommon lxterminal labwc
-
-(maybe more, ... or less.. when I make this pure wayland)
+sudo apt install plymouth plymouth-themes lightdm libxkbcommon-dev lxterminal labwc openbox obconf
 
 Core changes:
 No dial out.
 No having to select a device.
 No trusting a forgein repo.
-No need for root.
 No forced reboot.
 Changed code to not disable HDMI ports.
+Changed onscreen keyboard to US english
+Changed touch screen orientation to match screen.
+Removed loading screen
+Changed how the driver"" looks for OS boot files, making this package less about 
+the OS version installed and more about which files are present.
+This removes a bug that presents itself when you update raspbian, to a newer version.
+
+
 
 Todo:
+source files after writing.
+testing.
 
-There is a bug in the language settings.
+Files created:
 
-there is a bug in the touch screen transformation settings
+$HOME/.config/labwc/rc.xml
+$HOME/.config/kanshi/config
+$HOME/.config/wayfire.ini
+
+Files Modified:
+/boot/config.txt
+
+OR
+
+/boot/firmware/config.txt
+
+depending on your installation.
 
 
-Requests:
-
-remove the edatec splash. or make the splash selectable.
