@@ -1,0 +1,18 @@
+Notes:
+install script 12.30.24: Whats working:
+A clean install of bookworm, with the reccomended softwares, runs fine, including HDMI co-output.
+
+Whats less functional:
+the light version, of any bookworm version of Raspbian even after installing known dependencies.
+This probably means my dependencies have dependencies or something like that.
+
+
+What is not functional:
+upgraded versions of Raspbian might have issues. Not so much as a driver issue, but as writing the right values to the right config files.
+
+
+Other dysfunctional obsurvations:
+removal of the touchscreen, after installation, even if the HMDI is working, seems to break both video output modes.
+
+
+
